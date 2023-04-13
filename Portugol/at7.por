@@ -1,74 +1,74 @@
 programa {
-    incluindo  biblioteca Matematica --> mat
-	função  inicio () {
+    inclua biblioteca Matematica --> mat
+	funcao inicio() {
 		
-		numero inteiro = 0
+		inteiro numero = 0
 		real numeroReal = 0
 		
-		operação inteira , contador = 1
+		inteiro operacao, contador = 1
 		
-		fachada{
-    		escreva ( "Qual a operação matemática?\n" )
-    		escreva ( "1 Pará Soma\n" )
-    		escreva ( "2 Para Subtração\n" )
-    		escreva ( "3 Para Divisão\n" )
-    		escreva ( "4 Para Multiplicação\n" )
-    		escreva ( "5 Pará Raiz quadrada\n" )
-    		escreva ( "6 Para Potenciação\n" )
-    		leia (operação)
-		} enquanto (operação <= 0  e operação > 6 )
+		faca{
+    		escreva("Qual a operação matemática?\n")
+    		escreva("1 Para Soma\n")
+    		escreva("2 Para Subtração\n")
+    		escreva("3 Para Divisão\n")
+    		escreva("4 Para Multiplicação\n")
+    		escreva("5 Para Raiz quadrada\n")
+    		escreva("6 Para Potenciação\n")
+    		leia(operacao)
+		}enquanto(operacao <= 0 e operacao > 6)
 		
-		fachada{
-		    escreva ( "Digite um número entre 1 e 10\n" )
-		    se (operação == 5  ou operação == 6 ){
-		        leia (númeroReal)
+		faca{
+		    escreva("Digite um número entre 1 e 10\n")
+		    se(operacao == 5 ou operacao == 6){
+		        leia(numeroReal)
 		    }
-		    senao {
-		        leia (número)
+		    senao{
+		        leia(numero)
 		    }
-		} enquanto (número > 10 )
+		}enquanto(numero > 10)
 		
 		
-		escolha (operacao){
-		    caso  1 :
-		        escreva ( "Tabuada de Soma para o numero: " , numero)
-        		enquanto (contador < 11 ){
-        		    escreva (número, " + " , contador, " = " , numero + contador, "\n" )
+		escolha(operacao){
+		    caso 1:
+		        escreva("Tabuada de Soma para o número: ", numero)
+        		enquanto(contador < 11){
+        		    escreva(numero, " + ", contador, " = ", numero + contador, "\n")
         		    contador = contador + 1
         		}
-        	parear
+        	pare
 		    
-		    caso  2 :
-		        escreva ( "Tabuada de subtração para o número: " , numero)
-        		enquanto (contador < 11 ){
-        		    escreva (numero, " - " , contador, " = " , numero - contador, "\n" )
+		    caso 2:
+		        escreva("Tabuada de Subtração para o número: ", numero)
+        		enquanto(contador < 11){
+        		    escreva(numero, " - ", contador, " = ", numero - contador, "\n")
         		    contador = contador + 1
         		}
-        	parear
+        	pare
         	
-        	caso  3 :
-		        escreva ( "Tabuada de Divisão para o número: " , numero)
-        		enquanto (contador < 11 ){
-        		    escreva (numero, " / " , contador, " = " , numero / contador, "\n" )
+        	caso 3:
+		        escreva("Tabuada de Divisão para o número: ", numero)
+        		enquanto(contador < 11){
+        		    escreva(numero, " / ", contador, " = ", numero / contador, "\n")
         		    contador = contador + 1
         		}
-        	parear
+        	pare
         	
-        	caso  4 :
-		        escreva ( "Tabuada de Multiplicação para o número: " , numero)
-        		enquanto (contador < 11 ){
-        		    escreva (número, " * " , contador, " = " , numero * contador, "\n" )
+        	caso 4:
+		        escreva("Tabuada de Multiplicação para o número: ", numero)
+        		enquanto(contador < 11){
+        		    escreva(numero, " * ", contador, " = ", numero * contador, "\n")
         		    contador = contador + 1
         		}
-        	parear
+        	pare
         	
-        	caso  5 :
-		        escreva ( "A Raiz Quadrada para o número: " , numeroReal, " é igual a " , mat. raiz (numeroReal, 2 . 0 ))
-        	parear
+        	caso 5:
+		        escreva("A Raiz Quadrada para o número: ", numeroReal, " é igual a ", mat.raiz(numeroReal,2.0))
+        	pare
         	
-        	Caso  6 :
-		        escreva ( "A Potencia para o numero: " , numeroReal, " é igual a " , mat.potencia(numeroReal, 2 . 0 ))
-        	parear
+        	caso 6:
+		        escreva("A Potencia para o número: ", numeroReal, " é igual a ", mat.potencia(numeroReal, 2.0))
+        	pare
 		}
 		
 	}
@@ -78,7 +78,7 @@ programa {
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 63; 
+ * @POSICAO-CURSOR = 2093; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

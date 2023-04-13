@@ -1,9 +1,9 @@
 programa {
-  função  inicio () {
+  funcao inicio() {
     inteiro num1, num2, num3, num4, num5, num6, num7, num8, num9, num10, num11, num12, num13, num14, num15
-    contador inteiro = 1 , maior = 0
+    inteiro contador=1, maior=0
 
-    escreva ( "Digite 15 numeros e tecle enter após cada um deles. \n" )
+    escreva ("Digite 15 números e tecle enter após cada um deles. \n")
     leia (num1)
     leia (num2)
     leia (num3)
@@ -20,7 +20,7 @@ programa {
     leia (num14)
     leia (num15)
 
-    enquanto (contador <= 15 ){
+    enquanto (contador <= 15){
       se (maior < num1) {
         maior = num1
       } se (maior < num2) {
@@ -56,7 +56,7 @@ programa {
       }
       contador++
     }
-  escreva ( "O maior número foi " ,maior, "." )
+  escreva ("O maior número foi ",maior,".")
   }
 }
 /* $$$ Portugol Studio $$$ 
@@ -64,7 +64,7 @@ programa {
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 1408; 
+ * @POSICAO-CURSOR = 1394; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

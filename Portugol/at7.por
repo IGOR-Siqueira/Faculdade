@@ -6,7 +6,8 @@ programa {
 		real numeroReal = 0
 		
 		inteiro operacao, contador = 1
-		
+		logico numerosinvalidos
+
 		faca{
     		escreva("Qual a operação matemática?\n")
     		escreva("1 Para Soma\n")
@@ -22,16 +23,18 @@ programa {
 		    escreva("Digite um número entre 1 e 10\n")
 		    se(operacao == 5 ou operacao == 6){
 		        leia(numeroReal)
+            numerosinvalidos = (numeroReal <=0 ou numeroReal > 10)
 		    }
 		    senao{
 		        leia(numero)
+            numerosinvalidos = (numero <=0 ou numero > 10)
 		    }
-		}enquanto(numero > 10)
+		}enquanto(numerosinvalidos)
 		
 		
 		escolha(operacao){
 		    caso 1:
-		        escreva("Tabuada de Soma para o número: ", numero)
+		        escreva("Tabuada de Soma para o número: ", numero, ". \n")
         		enquanto(contador < 11){
         		    escreva(numero, " + ", contador, " = ", numero + contador, "\n")
         		    contador = contador + 1
@@ -39,7 +42,7 @@ programa {
         	pare
 		    
 		    caso 2:
-		        escreva("Tabuada de Subtração para o número: ", numero)
+		        escreva("Tabuada de Subtração para o número: ", numero, ". \n")
         		enquanto(contador < 11){
         		    escreva(numero, " - ", contador, " = ", numero - contador, "\n")
         		    contador = contador + 1
@@ -47,7 +50,7 @@ programa {
         	pare
         	
         	caso 3:
-		        escreva("Tabuada de Divisão para o número: ", numero)
+		        escreva("Tabuada de Divisão para o número: ", numero, ". \n")
         		enquanto(contador < 11){
         		    escreva(numero, " / ", contador, " = ", numero / contador, "\n")
         		    contador = contador + 1
@@ -55,7 +58,7 @@ programa {
         	pare
         	
         	caso 4:
-		        escreva("Tabuada de Multiplicação para o número: ", numero)
+		        escreva("Tabuada de Multiplicação para o número: ", numero, ". \n")
         		enquanto(contador < 11){
         		    escreva(numero, " * ", contador, " = ", numero * contador, "\n")
         		    contador = contador + 1
@@ -78,7 +81,7 @@ programa {
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 2093; 
+ * @POSICAO-CURSOR = 2280; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
